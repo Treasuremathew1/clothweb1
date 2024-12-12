@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    position: fixed;
+    background: rgba(236, 233, 233, 0.329);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 3px 3px rgba(0,0,0,0.50);
+    width: 100%;
+    z-index: 100;
+}
+.logo{
+    font-size: 35px;
+    color: #000;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    margin: 10px;
+}
+#menu-bar{
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+.navbar a{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.2s all ease-in;
+}
+.navbar a:hover{
+    color: #feada6;
+    transition: 0.2s all ease-in;
+}
+.header{
+    padding: 4rem;
+    text-align: center;
+    font-size: 25px;
+}
+.home{
+    background-image: linear-gradient(rgb(0,0,0,0.50), rgb(0,0,0,0.50)), url(blog-06.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-text{
+    color: white;
+}
+.home-text h1{
+    font-size: 5rem;
+    margin: 5px;
+}
+.home-text p{
+    margin: 5px;
+}
+.home-btn{
+    width: 100px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background: #feada6;
+    color: white;
+    margin: 5px;
+}
+.new{
+    background: #fff;
+    width: 100%;
+}
+.new-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 10px;
+}
+.new-box{
+    flex: 1 1 20rem;
+    background: none;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.50);
+    border: 1px solid rgba(0,0,0,0.50);
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px;
+}
+.new-box h1{
+    margin: 10px;
+}
+.new-box img{
+    width: 100%;
+    height: 20rem;
+}
+.new-box:hover img{
+    transform: scale(1.1);
+}
+.new-box .new-box-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+.new-box .new-box-btn h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.new-box .new-box-btn .new-btn{
+    width: 100px;
+    height: 40px;
+    background: none;
+    border-radius: 50px;
+    border: 1px solid #feada6;
+    transition: 0.4s;
+}
+.new-box-btn .new-btn:hover{
+    background: #feada6;
+    color: #fff;
+    transition: 0.4s;
+}
+.shop{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #feada6, #f5efef);
+}
+.shop .shop-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.shop-box{
+    flex: 1 1 20rem;
+    margin: 20px;
+    padding: 5px;
+    background: none;
+}
+.shop-box img{
+    width: 100%;
+    border-radius: 10px;
+}
+.products{
+    width: 100%;
+    background: #fff;
+}
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.products-container .products-box{
+    flex: 1 1 20rem;
+    background: none;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.50);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 6px;
+    border: 1px solid rgba(0,0,0,0.50);
+    overflow: hidden;
+}
+.products-box h1{
+    margin: 10px;
+}
+.products-box img{
+    width: 100%;
+}
+.products-box:hover img{
+    transform: scale(1.1);
+}
+.products-box .product-text{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-text h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.products-box .product-text .product-btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background: none;
+    transition: 0.4s;
+    border: 1px solid #feada6
+}
+.product-text .product-btn:hover{
+    background: #feada6;
+    color: white;
+    transition: 0.4s;
+}
+.blog{
+    width: 100%; 
+    background: none;
+}
+.blog .blog-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax( 260px, 1fr));
+    gap: 1.5rem;
+    margin: 10px;
+}
+.blog-box{
+    width: 300px;
+    background: none;
+    padding: 6px;
+}
+.blog-box img{
+    width: 100%;
+    height: 10rem;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px){
+    #menu-bar{
+        display: flex;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 100%;
+        background: #000;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        gap: 2rem;
+        padding: 10px;
+        flex-direction: column;
+        display: none;
+    }
+    .navbar a{
+        color: white;
+        font-size: 2rem;
+        transition: 0.2s;
+    }
+    .navbar a:hover{
+        color: #feada6;
+        transition: 0.2s;
+    }
+    .navbar.active{
+        display: flex;
+        right: 0;
+        transition: 0.2s;
+    }
+    .home-text h1{
+        font-size: 2.3rem;
+    }
+}
+@media (max-width: 480px){
+    .blog-box{
+        width: 320px;
+    }
+    .blog-box img{
+        width: 100%;
+    }
+    .logo{
+        font-size: 23px;
+    }
+}
+@media (max-width: 320px){
+    .blog-box{
+        width: 270px;
+    }
+    .blog-box img{
+        width: 100%;
+    }
+    .logo{
+        font-size: 23px;
+    }
+}
